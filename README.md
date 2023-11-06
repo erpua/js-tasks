@@ -1,4 +1,4 @@
 # js-tasks
 
 # VSCode 
-- Ctrl + Slt + N => runs Code Runner
+- Ctrl + Alt + N => runs Code Runner
