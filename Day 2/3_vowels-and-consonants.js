@@ -15,4 +15,7 @@ function vowelsAndConsonants(s) {
     console.log(consonants);
 };
 
+
+//new commit for day 2
 vowelsAndConsonants('javascriptloops');
+// vowelsAndConsonants('javascript');
