@@ -15,14 +15,14 @@ function factorial(n) {
   while (n > 1) { 
     n = n - 1; // decrementation by 1 at each iteration or (n--;)
     result = result * n; // or result *= num; 
-    /* 
-                    num           num--      var result      result *= num         
-    1st iteration:   5             4            5             20 = 5 * 4      
-    2nd iteration:   4             3           20             60 = 20 * 3
-    3rd iteration:   3             2           60            120 = 60 * 2
-    4th iteration:   2             1          120            120 = 120 * 1
-    5th iteration:   1             0          120
+     /* 
+                     n           n - 1      let result        result = result * n         
+    1st iteration:   5             4            5             result = result * 4 = 5 * 4 = 20      
+    2nd iteration:   4             3           20             result = result * 3 = 20 * 3 = 60
+    3rd iteration:   3             2           60             result = result * 2 = 60 * 2 = 120
+    4th iteration:   2             1          120             result = result * 1 = 120 * 1 = 120
     End of the WHILE loop 
+    
     */
   };
      
