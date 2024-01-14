@@ -101,3 +101,26 @@ const arr = [12, 35, 10, 35, 10, 34, 1];
 // Output: The second largest element is 34 
 console.log(findSecondLargest(arr)); */
 
+function findSecondLargest(nums) {
+    let largestNumber = nums[0];
+    let secondLargestNumber = 0;
+
+  for (let i = 1; i < nums.length; i++) {
+    console.log('nums[i] =>', nums[i]);
+
+      if (nums[i] > largestNumber) {
+        secondLargestNumber = largestNumber;
+        largestNumber = nums[i];
+      } else if (nums[i] < largestNumber && nums[i] > secondLargestNumber) {
+        secondLargestNumber = nums[i];
+      }
+    }
+    
+    return secondLargestNumber;
+  };
+
+  // Example usage:
+  const array = [5, 2, 10, 8, 3];
+  const secondLargest = findSecondLargest(array);
+  console.log("Second largest element:", secondLargest);
+
