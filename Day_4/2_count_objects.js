@@ -4,7 +4,7 @@
  * Parameter(s):
  * objects: an array of objects with integer properties 'x' and 'y'
  */
-
+/* 
 function getCount(objects) {
   let totalCountOfObjects = 0;
   
@@ -15,4 +15,19 @@ function getCount(objects) {
   }
   
   return totalCountOfObjects;
-}
+}; */
+
+
+function getCount(objects) {
+
+  let totalCountOfObjects = 0;
+
+  objects.forEach( function(i) {
+      if(i.x === i.y) {
+        totalCountOfObjects ++;
+      }
+    }
+  );
+  
+  return totalCountOfObjects;
+};
