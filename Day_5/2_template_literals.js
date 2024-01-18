@@ -7,7 +7,16 @@
  * literals: The tagged template literal's array of strings.
  * expressions: The tagged template literal's array of expression values (i.e., [area, perimeter]).
  */
-function sides(literals, ...expressions) {
+
+// First way
+/* function sides(literals, ...expressions) {
+
+       
+    // Useless - ? 
+    // const firstLiteralsElement = literals[0];
+    // const secondLiteralsElement = literals[1];
+    // const thirdLiteralsElement = literals[2]; 
+
   const area = expressions[0];
   const perimeter = expressions[1];
   
@@ -19,4 +28,15 @@ function sides(literals, ...expressions) {
   const sortedS = [s1,s2].sort();
   
   return sortedS;
+}; */
+
+// Second way
+function sides(literals, ...expressions) {
+    
+    const [A,P] = expressions;
+    
+    const s1 = ( P + Math.sqrt(Math.pow(P, 2) - 16 * A) ) / 4;
+    const s2 = ( P - Math.sqrt(Math.pow(P, 2) - 16 * A) ) / 4;
+    
+    return [s1, s2].sort();
 };
